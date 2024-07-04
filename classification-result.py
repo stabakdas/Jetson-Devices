@@ -1,3 +1,5 @@
+#The script below will save the classification result in a .txt file. 
+
 import jetson.inference
 import jetson.utils
 import argparse
