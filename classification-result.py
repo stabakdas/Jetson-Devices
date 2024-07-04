@@ -1,4 +1,4 @@
-#The script below will save the classification result in a .txt file. 
+#This script will be useful to run a detection program inside the jetson inference and save the output or classification result in a .txt file. 
 
 import jetson.inference
 import jetson.utils
