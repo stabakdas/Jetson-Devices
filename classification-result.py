@@ -1,7 +1,7 @@
-# This script will be useful to run a detection program inside the jetson inference. 
-# It will save the output or classification result in a .txt file. 
+# This script will be useful to run a classification inside the Jetson inference library. 
+# It will save the output or classification result in a .txt file unless specified by the --output string. 
 # You may find the result file as result.txt in your mounted directory of Jetson Devices.
-# If you want to know how to mount a folder inside jetson-inference. You may follow the official GitHub Repo of dusty-nv https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-example-python-2.md#setting-up-the-project
+# If you want to learn how to mount a folder inside jetson-inference. You may follow the official GitHub Repo of Nvidia https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-example-python-2.md#setting-up-the-project
 
 import jetson.inference
 import jetson.utils
