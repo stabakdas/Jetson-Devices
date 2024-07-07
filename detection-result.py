@@ -11,6 +11,10 @@ You can find the detection results in the specified .txt file in your mounted di
 For more details on how to set up and mount a folder for Jetson Inference projects, please refer to the official NVIDIA GitHub repository: 
 https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-example-python-2.md#setting-up-the-project
 
+To use a different pre-trained model, modify the --network argument. For a list of available pre-trained detection models, 
+please refer to the following GitHub repository: https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md#pre-trained-detection-models-available
+
+
 Usage example:
 python3 detection-result.py <image_filename> --network ssd-mobilenet-v2 --threshold 0.5 --output custom_results.txt
 """
