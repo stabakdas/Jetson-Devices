@@ -15,7 +15,7 @@ Run the script with the following command:
 python3 mydetection2.py <image_filename> --network <model_name> --threshold <detection_threshold> --output <output_file> --output_image <output_image_file>
 
 For Example:
-python3 mydetection1.py myimage.jpg --network ssd-mobilenet-v2 --threshold 0.5 --output detection_results.txt --output_image output_myimage.jpg
+python3 mydetection2.py myimage.jpg --network ssd-mobilenet-v2 --threshold 0.5 --output detection_results.txt --output_image output_myimage.jpg
 
 """
 
