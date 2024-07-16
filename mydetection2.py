@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Object Detection with NVIDIA Jetson Inference Library
-This Python script performs object detection on images using the NVIDIA Jetson Inference library. It leverages pre-trained models such as ssd-mobilenet-v2 to identify and classify objects within an image. 
+This Python script performs object detection on images using the NVIDIA Jetson Inference library. It uses pre-trained models such as ssd-mobilenet-v2 to identify and classify objects within an image. 
 The script also records detection time and saves the detection results to a specified .txt file.
 Optionally save the processed image with bounding boxes indicating detected objects.
 
