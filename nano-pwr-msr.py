@@ -7,6 +7,8 @@ and calculate the average power consumption over the duration.
 The variable duration is set to 10 seconds by default but can be easily changed to any other value as needed.
 
 # To run this script use this command sudo python3 nano-pwr-msr.py from linux terminal
+Reference for calculation method:
+https://forums.developer.nvidia.com/t/power-consumption-monitoring/73608
 """
 import subprocess
 import time
@@ -43,8 +45,10 @@ def run_tegrastats(duration):
         process.kill()
 
     if count > 0:
-        total_power = total_input_power + total_gpu_power + total_cpu_power
-        average_power = total_power / count
+        """
+        #total_power = total_input_power + total_gpu_power + total_cpu_power
+        """
+        average_power = total_input_power / count
         print(f"Total POM_5V_IN: {total_input_power} mW")
         print(f"Total POM_5V_GPU: {total_gpu_power} mW")
         print(f"Total POM_5V_CPU: {total_cpu_power} mW")
