@@ -1,12 +1,13 @@
 """
-# This script will calculate total and average power consumption for Nano series Nvidia Jetson Devices
+# This script will represent various power and  calculate average Input power consumption for Jetson Nano of Nvidia Jetson Devices.
 
 # This script will run tegrastats for the specified duration, 
 collect the power consumption data, sum up the total power consumption, 
 and calculate the average power consumption over the duration. 
 The variable duration is set to 10 seconds by default but can be easily changed to any other value as needed.
 
-# To run this script use this command sudo python3 nano-pwr-msr.py from linux terminal
+# To run this script use this command sudo python3 nano-pwr-msr.py from linux terminal on Jetson Nano
+
 Reference for calculation method:
 https://forums.developer.nvidia.com/t/power-consumption-monitoring/73608
 """
@@ -49,7 +50,7 @@ def run_tegrastats(duration):
         print(f"Total POM_5V_IN: {total_input_power} mW")
         print(f"Total POM_5V_GPU: {total_gpu_power} mW")
         print(f"Total POM_5V_CPU: {total_cpu_power} mW")
-        print(f"Average Power Consumption: {average_power:.2f} mW")
+        print(f"Average Total Input Power Consumption: {average_power:.2f} mW")
     else:
         print("No power data collected.")
 
