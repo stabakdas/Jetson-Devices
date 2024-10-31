@@ -9,6 +9,7 @@ The variable duration is set to 10 seconds by default but can be easily changed 
 # To run this script use this command sudo python3 xavier-pwr-msr.py from linux terminal on Jetson AGX Xavier
 
 To understand the data generated of tegrastats. https://docs.nvidia.com/jetson/archives/r34.1/DeveloperGuide/text/AT/JetsonLinuxDevelopmentTools/TegrastatsUtility.html
+Another Informational note https://forums.developer.nvidia.com/t/power-measurement-difference-on-jetson-agx-xavier/197659
 
 """
 import subprocess
