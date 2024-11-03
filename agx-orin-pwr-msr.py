@@ -6,7 +6,7 @@ collect the power consumption data, sum up the total power consumption,
 and calculate the average power consumption over the duration. 
 The variable duration is set to 10 seconds by default but can be easily changed to any other value as needed.
 
-# To run this script use this command sudo python3 agx-pwr-msr.py from linux terminal
+# To run this script use this command sudo python3 agx-orin-pwr-msr.py from linux terminal
 """
 import subprocess
 import re
