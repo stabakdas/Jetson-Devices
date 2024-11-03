@@ -94,9 +94,11 @@ def run_tegrastats(duration):
         # Read output from tegrastats in real-time
         while time.time() - start_time < duration:
             output = process.stdout.readline().strip()
+            print("Raw output:", output)  # Print raw output for debugging
             if output:
                 # Updated regex pattern to match the new format
                 power_data = re.findall(r'VDD_GPU_SOC (\d+)mW/.* VDD_CPU_CV (\d+)mW/.* VIN_SYS_5V0 (\d+)mW/.* VDDQ_VDD2_1V8AO (\d+)mW/.*', output)
+                print("Parsed data:", power_data)  # Print parsed data for debugging
                 
                 if power_data:
                     vdd_gpu_soc, vdd_cpu_cv, vin_sys_5v0, vddq_vdd2_1v8ao = map(int, power_data[0])
