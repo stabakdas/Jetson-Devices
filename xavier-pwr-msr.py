@@ -10,6 +10,7 @@ The variable duration is set to 10 seconds by default but can be easily changed 
 
 To understand the data generated of tegrastats. https://docs.nvidia.com/jetson/archives/r34.1/DeveloperGuide/text/AT/JetsonLinuxDevelopmentTools/TegrastatsUtility.html
 Another Informational note https://forums.developer.nvidia.com/t/power-measurement-difference-on-jetson-agx-xavier/197659
+Informational Note: Xavier may take upto 72W though its energy budget range is 10W~30W of predefined nvpmodels. Source: https://forums.developer.nvidia.com/t/xavier-power-consumption-information-solved/64595
 
 """
 import subprocess
