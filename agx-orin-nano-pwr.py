@@ -1,3 +1,13 @@
+"""
+# This script will calculate total and average power consumption for the Agx Orin Nano Nvidia Jetson Series.
+
+# This script will run tegrastats for the specified duration, 
+collect the power consumption data, sum up the total power consumption, 
+and calculate the average power consumption over the specified duration. 
+The variable duration is set to 10 seconds by default but can be easily changed to any other value as needed.
+
+# To run this script use this command sudo python3 agx-orin-nano-pwr-msr.py from linux terminal
+"""
 import subprocess
 import time
 import re
